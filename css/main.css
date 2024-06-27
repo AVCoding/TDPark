@@ -1,0 +1,159 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: #F2E524;
+	background-image: url("../images/Background.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: sans-serif;
+}
+main{
+	max-width: 1920px;
+	min-height: 100vh;
+	margin: 0 auto;
+}
+
+.main-info{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+.service h2{
+	color: red;
+	font-size: 60px;
+	font-family: sans-serif;
+}
+
+.company{
+	display: flex;
+	align-items: center;
+}
+.company_name h1 {
+	color: #F2E524;
+	font-family: sans-serif;
+	font-size: 50px;
+}
+
+.logo {
+	margin: 50px;
+}
+.logo img{
+	width: 150px;
+}
+
+.contacts{
+	margin-top: 50px;
+	padding: 50px 80px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.contacts .taxi {
+	display: flex;
+}
+
+.contacts .taxi img {
+	max-width: 630px;
+	width: 100%;
+	margin-left: 200px;
+	animation: slideInLeft;
+    animation-duration: 1s;
+}
+
+.conditions {
+	margin: 25px;
+}
+.conditions h3{
+	color: red;
+	font-family: sans-serif;
+	font-size: 25px;
+	margin-bottom: 10px;
+}
+.conditions p{
+	font-family: sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	margin-top: 5px;
+}
+.conditions p span{
+	color: red;
+}
+
+.contacts_phone{
+	display: flex;
+	align-items: center;
+	margin: 25px;
+}
+.contacts_phone_icon{
+	border-radius: 50%;
+	background-color: #000000;
+	width: 50px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 20px;
+	border: 1px solid #ffffff;
+}
+.contacts_phone_icon i{
+	color: #ffffff;
+	font-size: 40px;
+}
+
+.contacts_phone_numbers{
+	display: flex;
+	flex-direction: column;
+}
+.contacts_phone_numbers a{
+	color: red;
+	text-decoration: none;
+	font-weight: bolder;
+	font-family: sans-serif;
+	font-size: 25px;
+}
+
+
+/*media queries*/
+@media screen and (max-width: 1024px) {
+	.contacts{
+		margin-top: 0;
+	}
+    .contacts .taxi img {
+		margin-left: 0;
+    }
+    .logo {
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+	.logo img{
+		max-width: 115px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.main-info{
+		flex-direction: column;
+	}
+	.logo{
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.contacts, .main-info{
+		padding: 15px;
+	}
+	.company_name h1 {
+		font-size: 40px;
+	}
+
+	.logo img{
+		max-width: 90px;
+	}
+}
